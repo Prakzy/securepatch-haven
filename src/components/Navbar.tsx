@@ -16,11 +16,10 @@ export const Navbar = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <Shield className="h-8 w-8 text-accent" />
-              <span className="text-xl font-bold text-primary">SecurePatch Hub</span>
+              <span className="text-xl font-bold text-primary">Afforal Cyber Patch</span>
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-6">
             <Link to="/pricing" className="text-primary hover:text-accent transition-colors">
               Pricing
@@ -41,7 +40,6 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
               variant="ghost"
@@ -59,7 +57,6 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-b">

@@ -1,5 +1,6 @@
 
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { PricingCard } from "@/components/PricingCard";
 
@@ -48,11 +49,10 @@ const pricingPlans = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <Hero />
       
-      {/* Pricing Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -70,6 +70,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
